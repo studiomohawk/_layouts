@@ -1,7 +1,7 @@
 ##About
 _layouts is a theme gallary for Jekyll powered websites. Themes are created by me, Yuya Saito who is an web designer/frontend developer in Tokyo, Japan.
 Unless otherwise noted, themes here are all MIT licenced which means you can do whatever you want as long as you don't sue me. See LICENCE for detail.
-And of course, this site is powerd by [jekyll](https://github.com/mojombo/jekyll).
+And of course, this site is powered by [jekyll](https://github.com/mojombo/jekyll).
 
 ##My design principle
 * Minimalist
