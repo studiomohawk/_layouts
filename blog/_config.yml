@@ -1,9 +1,12 @@
 #Presentation Settings
 sitename: _layouts
 tagline: themes for jekyll
-#Deployment Settings
+#Development Settings
 pygments:    false
 markdown:    kramdown
 permalink:   pretty
 kramdown:
   auto_ids: false
+#Deployment  Settings
+ftp_host: studiomohawk.com
+ftp_dir: /www/layouts
