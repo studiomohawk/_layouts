@@ -2,14 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>_layouts | themes for jekyll</title>
- <link href="http://layouts.studiomohawk.com/atom.xml" rel="self"/>
- <link href="http://layouts.studiomohawk.com/"/>
- <updated>2011-01-08T16:31:21+09:00</updated>
+ <link href="http://layouts.studiomohawk.comatom.xml" rel="self"/>
+ <link href="http://layouts.studiomohawk.com"/>
+ <updated>2011-01-08T16:47:16+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
- <author>
-   <name>Yuya Saito</name>
-   <email>studiomohawk@gmail.com</email>
- </author>
 
  
  <entry>
@@ -55,19 +51,20 @@ Just clone my theme from github, start up terminal application, go cloned dir an
 As I learn, I&amp;rsquo;ll share my findings on Jekyll at _layouts. If you have any tips, I&amp;rsquo;d be very happy to hear it.&lt;/p&gt;
 
 &lt;h2&gt;My design principle&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;Minimalist&lt;/li&gt;
-&lt;/ol&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Minimalist&lt;/p&gt;
 
-&lt;p&gt;I love minimalist approach. This allows me to focus on details. I&amp;rsquo;ll always keep design, file structure and code simple as possible.&lt;/p&gt;
+    &lt;p&gt;I love minimalist approach. This allows me to focus on details. I&amp;rsquo;ll always keep design, file structure and code simple as possible.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I hate IE&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;I hate IE&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I&amp;rsquo;m sorry to say, but please let me ignore IE for my personal project. I&amp;rsquo;ve had it enough on my day job already.
-  Besides, if I care about IE, code will be messy which conflict with my first principle.
-  And I don&amp;rsquo;t have Windows PC so that makes it pretty hard for me to check if my design/code is compatible.&lt;/p&gt;
+    &lt;p&gt;I&amp;rsquo;m sorry to say, but please let me ignore IE for my personal project. I&amp;rsquo;ve had it enough on my day job already.
+Besides, if I care about IE, code will be messy which conflict with my first principle.
+And I don&amp;rsquo;t have Windows PC so that makes it pretty hard for me to check if my design/code is compatible.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2&gt;About me&lt;/h2&gt;
 &lt;p&gt;My name is Yuya Saito, I use studiomohawk as my alias on internet. As I&amp;rsquo;ve wrote above, I am an web designer/front end developer. I currently live in Tokyo, Japan working for internet based media company in Japan.

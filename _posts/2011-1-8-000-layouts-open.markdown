@@ -16,11 +16,11 @@ Just clone my theme from github, start up terminal application, go cloned dir an
 As I learn, I'll share my findings on Jekyll at \_layouts. If you have any tips, I'd be very happy to hear it.
 
 ##My design principle
-1. Minimalist
+* Minimalist
   
   I love minimalist approach. This allows me to focus on details. I'll always keep design, file structure and code simple as possible.
 
-2. I hate IE
+* I hate IE
 
   I'm sorry to say, but please let me ignore IE for my personal project. I've had it enough on my day job already.
   Besides, if I care about IE, code will be messy which conflict with my first principle.

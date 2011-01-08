@@ -1,6 +1,7 @@
 #Presentation Settings
 sitename: _layouts
 tagline: themes for jekyll
+url: http://layouts.studiomohawk.com
 #Deployment  Settings
 pygments:    false
 markdown:    kramdown
