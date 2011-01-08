@@ -4,11 +4,11 @@ Unless otherwise noted, themes here are all MIT licenced which means you can do 
 And of course, this site is powerd by [jekyll](https://github.com/mojombo/jekyll).
 
 ##My design principle
-1. Minimalist
+* Minimalist
   
   I love minimalist approach. This allows me to focus on details. I'll always keep design, file structure and code simple as possible.
 
-2. I hate IE
+* I hate IE
 
   I'm sorry to say, but please let me ignore IE for my personal project. I've had it enough on my day job already.
   Besides, if I care about IE, code will be messy which conflict with my first principle.
