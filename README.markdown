@@ -26,4 +26,4 @@ I have repository for this blog at [github](https://github.com/studiomohawk/_lay
 
 You can follow me [@cssrader](http://twitter.com/#!/cssradar)
 
-If you like what I'm doing you could give me an invite for [Forrest](http://forrst.com) or [Dribbble](http://dribbble.com).
+If you like what I'm doing you could give me an invite for <del>[Forrest](http://forrst.com)</del>(I've got it. Thanks!) or [Dribbble](http://dribbble.com).
