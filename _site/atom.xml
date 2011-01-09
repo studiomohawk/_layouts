@@ -4,9 +4,83 @@
  <title>_layouts | themes for jekyll</title>
  <link href="http://layouts.studiomohawk.comatom.xml" rel="self"/>
  <link href="http://layouts.studiomohawk.com"/>
- <updated>2011-01-08T17:04:16+09:00</updated>
+ <updated>2011-01-09T11:37:10+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
+ 
+ <entry>
+   <title>002_jekyll_newbie_guide</title>
+   <link href="http://layouts.studiomohawk.com/2011/01/09/002_jekyll_newbie_guide/"/>
+   <updated>2011-01-09T00:00:00+09:00</updated>
+   <id>http://layouts.studiomohawk.com/2011/01/09/002_jekyll_newbie_guide</id>
+   <content type="html">&lt;h2&gt;A Newbie(like me) Guide for Jekyll&lt;/h2&gt;
+
+&lt;h3&gt;Tools(for Mac)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.vim.org/&quot;&gt;Vim&lt;/a&gt; + &lt;a href=&quot;https://github.com/tpope/vim-markdown&quot;&gt;tpope&amp;rsquo;s vim-markdown&lt;/a&gt; + &lt;a href=&quot;https://github.com/csexton/jekyll.vim&quot;&gt;csexton&amp;rsquo;s jekyll.vim&lt;/a&gt; + &lt;a href=&quot;https://github.com/tpope/vim-fugitive&quot;&gt;tpope&amp;rsquo;s vim-fugitive&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Vim is, needless to say, an editor. I recommend plugins mentioned above for writing and version controlling(you should always do that) your posts.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://visor.binaryage.com/&quot;&gt;Visor&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;You need to be familiar with Terminal in order to use &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;. I&amp;rsquo;m a GUI guy as much as you are so Visor make my life a little easier. Visor is a system-wide terminal on a hot key.
+When you press your hotkey, Terminal wrapped with Visor drops down. It looks cool enough to use it more often so you can learn commands(well, you&amp;rsquo;ll only need cd to move around directory and jekyll to build sites).&lt;/p&gt;
+
+    &lt;p&gt;&lt;em&gt;Could someone please teach me how to end jekyll &amp;ndash;server &amp;ndash;auto? Do I have to quit terminal for it?&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Websites Get You Started on Jekyll&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki&quot;&gt;Official Wiki&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://articles.sitepoint.com/article/jekyll-sites-made-simple&quot;&gt;Site Point&amp;rsquo;s Jekyll: Sites Made Simple&lt;/a&gt; - Little bit old but useful guide.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Daring Fireball: Markdown Syntax Documentation&lt;/a&gt; - Using as my markdown syntax cheat sheet.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mojombo/jekyll/issues&quot;&gt;Official Issue&lt;/a&gt; - Some Issues are resolved.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://groups.google.com/group/jekyll-rb&quot;&gt;Official Mailing list&lt;/a&gt; - You can ask questions. You should search your question &lt;em&gt;fitst&lt;/em&gt;. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Recommend Plugins for Jekyll&lt;/h2&gt;
+&lt;p&gt;Jekyll can be extended its capability via &lt;a href=&quot;https://github.com/mojombo/jekyll/wiki/Plugins&quot;&gt;plugins&lt;/a&gt;. Here I&amp;rsquo;m not gonna try to collect all plugins available, but I&amp;rsquo;ll list ones I use or I&amp;rsquo;ll try to use.&lt;/p&gt;
+
+&lt;h3&gt;Currently Using&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/tatey/jekyll_plugins&quot;&gt;tatey&amp;rsquo;s jekyll_plugins&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;I use LESS CSS converter and JavaScript Minifier. I couldn&amp;rsquo;t figure out how to use growl one, but I&amp;rsquo;d like to try it again.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/indirect/jekyll-postfiles&quot;&gt;indirect&amp;rsquo;s jekyll_postfiles&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;A plugin adds files for each post. You can add files on post basic. You need to create a directory named after the post in _postfiles, then you can refer to the file using /2011/01/09/002_jekyll_newbie_guide/YOURFILENAME.EXTENSION .
+I need this to show screen shots of my theme.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Will Look into&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/pattex/jekyll-tagging&quot;&gt;pattex&amp;rsquo;s jekyll_tagging&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;According to its author, jekyll-tagging is a Jekyll plugin, to add a tag cloud and per tag pages to your Jekyll generated Website.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://recursive-design.com/projects/jekyll-plugins/&quot;&gt;Recursive-design.com&amp;rsquo;s jekyll plugins&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;generate_categories.rb and generate_sitemap.rb look interesting.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/blackwinter/jekyll-pagination&quot;&gt;blackwinter&amp;rsquo;s jekyll-pagination&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Extend pagination generator. Not sure how this differs from native pagination since I have no idea how to use native pagination.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>001_the_minimum</title>
@@ -35,18 +109,19 @@ You can ask me questions but don&amp;rsquo;t expect me to make this compatible w
  </entry>
  
  <entry>
-   <title>000_layout_open_for_public</title>
+   <title>000_layouts_open_for_public</title>
    <link href="http://layouts.studiomohawk.com/2011/01/08/000-layouts-open/"/>
    <updated>2011-01-08T00:00:00+09:00</updated>
    <id>http://layouts.studiomohawk.com/2011/01/08/000-layouts-open</id>
    <content type="html">&lt;h2&gt;What is _layouts?&lt;/h2&gt;
-&lt;p&gt;_layouts is created because I&amp;rsquo;ve just found out about &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;, which is, according to its author, a simple, blog aware, static site generator.
-Jekyll is simple but powerful, I can do most of tasks I have to do to manage blog.
+&lt;p&gt;_layouts provides themes for &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;, which is, according to its author, a simple, blog aware, static site generator.&lt;/p&gt;
+
+&lt;p&gt;Jekyll is simple but powerful, I can do most of tasks I have to do to manage blog.
 I&amp;rsquo;ve been using WordPress, in fact I still use it, but I can see myself in future, I use Jekyll as my primal blog tool.
 I can use my trusted MacVim to write a post. I still couldn&amp;rsquo;t figure it out, but I could use git to &lt;em&gt;publish&lt;/em&gt; a post(Can anybody help me on this? Both Official document and Google failed).&lt;/p&gt;
 
 &lt;p&gt;_layouts is created for those who like to try Jekyll. I&amp;rsquo;m new to ruby so I can&amp;rsquo;t help you with that, but I&amp;rsquo;m an web designer/front end developer so I provide &lt;em&gt;themes&lt;/em&gt; to help you.
-Theme is like a WordPress theme. You can use it to change your design. While Jekyll have not yet provide WordPress like theming, it&amp;rsquo;s fairly easy to accomplish same thing.
+Theme is like a WordPress theme. You can use it to change your design. While Jekyll have not yet provide WordPress like theming, it&amp;rsquo;s fairly easy to accomplish the same thing.
 Just clone my theme from github, start up terminal application, go cloned dir and type jekyll &amp;ndash;server. You can now preview your new design at http://localhost:4000/
 As I learn, I&amp;rsquo;ll share my findings on Jekyll at _layouts. If you have any tips, I&amp;rsquo;d be very happy to hear it.&lt;/p&gt;
 

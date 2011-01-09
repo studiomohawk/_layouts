@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.ico">
+ 	<meta name="author" content="Yuya Saito">
+	<link href="http://feeds.feedburner.com/_layouts" rel="alternate" title="_layouts - themes for jekyll" type="application/atom+xml" />
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/grid.css">
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/mod.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/modernizr.js"></script>
+	<title> 002_jekyll_newbie_guide | _layouts | themes for jekyll</title>
+	<meta name="description" content="">
+</head>
+<body class="text">
+	<div id="page">
+		<header id="head">
+		<div class="head_inner">
+			<ul>
+				<li class="logo"><a href="/">_layouts</a></li>
+				<li class="tagline">themes for jekyll</li>
+			</ul>
+		</div>
+		</header><!-- id="head" -->
+		<div id="main" role="main">
+			<div class="main_inner">
+				<header class="hd_article">
+					<h1>002_jekyll_newbie_guide</h1>
+				</header>
+				<article class="the_article">
+				<div class="article_inner">
+					<div class="content"><h2>A Newbie(like me) Guide for Jekyll</h2>
+
+<h3>Tools(for Mac)</h3>
+<ul>
+  <li>
+    <p><a href="http://www.vim.org/">Vim</a> + <a href="https://github.com/tpope/vim-markdown">tpope&rsquo;s vim-markdown</a> + <a href="https://github.com/csexton/jekyll.vim">csexton&rsquo;s jekyll.vim</a> + <a href="https://github.com/tpope/vim-fugitive">tpope&rsquo;s vim-fugitive</a></p>
+
+    <p>Vim is, needless to say, an editor. I recommend plugins mentioned above for writing and version controlling(you should always do that) your posts.</p>
+  </li>
+  <li>
+    <p><a href="http://visor.binaryage.com/">Visor</a></p>
+
+    <p>You need to be familiar with Terminal in order to use <a href="https://github.com/mojombo/jekyll">Jekyll</a>. I&rsquo;m a GUI guy as much as you are so Visor make my life a little easier. Visor is a system-wide terminal on a hot key.
+When you press your hotkey, Terminal wrapped with Visor drops down. It looks cool enough to use it more often so you can learn commands(well, you&rsquo;ll only need cd to move around directory and jekyll to build sites).</p>
+
+    <p><em>Could someone please teach me how to end jekyll &ndash;server &ndash;auto? Do I have to quit terminal for it?</em></p>
+  </li>
+</ul>
+
+<h1>Websites Get You Started on Jekyll</h1>
+<ul>
+  <li><a href="https://github.com/mojombo/jekyll/wiki">Official Wiki</a></li>
+  <li><a href="http://articles.sitepoint.com/article/jekyll-sites-made-simple">Site Point&rsquo;s Jekyll: Sites Made Simple</a> - Little bit old but useful guide.</li>
+  <li><a href="http://daringfireball.net/projects/markdown/syntax">Daring Fireball: Markdown Syntax Documentation</a> - Using as my markdown syntax cheat sheet.</li>
+  <li><a href="https://github.com/mojombo/jekyll/issues">Official Issue</a> - Some Issues are resolved.</li>
+  <li><a href="http://groups.google.com/group/jekyll-rb">Official Mailing list</a> - You can ask questions. You should search your question <em>fitst</em>. </li>
+</ul>
+
+<h2>Recommend Plugins for Jekyll</h2>
+<p>Jekyll can be extended its capability via <a href="https://github.com/mojombo/jekyll/wiki/Plugins">plugins</a>. Here I&rsquo;m not gonna try to collect all plugins available, but I&rsquo;ll list ones I use or I&rsquo;ll try to use.</p>
+
+<h3>Currently Using</h3>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/tatey/jekyll_plugins">tatey&rsquo;s jekyll_plugins</a></p>
+
+    <p>I use LESS CSS converter and JavaScript Minifier. I couldn&rsquo;t figure out how to use growl one, but I&rsquo;d like to try it again.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/indirect/jekyll-postfiles">indirect&rsquo;s jekyll_postfiles</a></p>
+
+    <p>A plugin adds files for each post. You can add files on post basic. You need to create a directory named after the post in _postfiles, then you can refer to the file using /2011/01/09/002_jekyll_newbie_guide/YOURFILENAME.EXTENSION .
+I need this to show screen shots of my theme.</p>
+  </li>
+</ul>
+
+<h3>Will Look into</h3>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/pattex/jekyll-tagging">pattex&rsquo;s jekyll_tagging</a></p>
+
+    <p>According to its author, jekyll-tagging is a Jekyll plugin, to add a tag cloud and per tag pages to your Jekyll generated Website.</p>
+  </li>
+  <li>
+    <p><a href="http://recursive-design.com/projects/jekyll-plugins/">Recursive-design.com&rsquo;s jekyll plugins</a></p>
+
+    <p>generate_categories.rb and generate_sitemap.rb look interesting.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/blackwinter/jekyll-pagination">blackwinter&rsquo;s jekyll-pagination</a></p>
+
+    <p>Extend pagination generator. Not sure how this differs from native pagination since I have no idea how to use native pagination.</p>
+  </li>
+</ul>
+</div>
+				</div>
+				</article>
+			</div>
+		</div><!-- id="main" -->
+		<nav class="pagenation">
+		<ul>
+		
+			<li class="before left"><a rel="prev" href="/2011/01/08/001-the-minimum/" class="btn" title="View 001_the_minimum">Before</a>
+		
+		
+		</ul>
+		</nav>
+		<footer id="foot">
+		<div class="foot_inner">
+			<div class="hasGrid">
+				<div class="grid grid-6"><h4>about</h4>
+<p>
+<a href="http://layouts.studiomohawk.com">_layouts</a> is a theme gallary for Jekyll powered websites. Themes are created by me, Yuya Saito who is an web designer/frontend developer in Tokyo, Japan.<br>
+Unless otherwise noted, themes here are all MIT licenced which means you can do whatever you want as long as you don't sue me. <br>
+You can read more detail on license at <a href="https://github.com/studiomohawk/_layouts">my github repository</a><br>
+And of course, this site is powerd by <a href="https://github.com/mojombo/jekyll">jekyll</a>.<br>
+</p>
+</div>
+				<div class="grid grid-6"><h4>if you like what i've done</h4>
+<ul>
+	<li>you could give me an invite for <a href="http://forrst.com/">Forrst</a> or <a href="http://dribbble.com/">Dribbble</a></li>
+    <li>or you can follow me at <a href="http://twitter.com/#!/cssradar" rel="me">Twitter</a></li>
+</ul>
+<h4>contact</h4>
+<ul>
+	<li><a href="http://twitter.com/#!/cssradar" rel="me">cssradar@twitter</a></li>
+</ul>
+</div>
+			</div>
+		</footer><!-- id="foot" -->
+	</div><!-- id="page" -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+<script>
+	var _gaq = [['_setAccount', 'UA-61203-14'], ['_trackPageview']];
+	(function(d, t) {
+		var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+	})(document, 'script');
+</script>
+
+</body>
+</html>
