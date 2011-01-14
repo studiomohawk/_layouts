@@ -1,0 +1,28 @@
+---
+layout: default
+style: showcase
+title: 003_the_leftcol
+---
+![Top page]({% postfile top.png %}){:class='left'}
+![Post page]({% postfile post.png %}){:class='right'}
+
+##About the\_leftcol
+
+I’ve stumbled upon many websites adopt left column lately.
+I've picked up some of traits on those new left column design web site.
+
+* Strong branding - Logo comes first strongly which lead to stronger branding.
+* Near empty - Left column used has navigation in it, but now it only contains little. as little as just a logo.
+
+Most [Jekyll](https://github.com/mojombo/jekyll) powered websites are personal website and have simple structure.
+This is why I decided to build this theme.
+
+[Download](https://github.com/studiomohawk/jekyll-theme-the_leftcol){:class='btn download'}
+
+###Note
+This theme is using HTML5 and CSS3.
+I really don't care about IE at all. Not even IE9.(May work just fine)
+You can ask me questions but don't expect me to make this compatible with IE.
+
+##Change log
+Refer this at github.

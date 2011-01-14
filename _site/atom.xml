@@ -4,9 +4,42 @@
  <title>_layouts | themes for jekyll</title>
  <link href="http://layouts.studiomohawk.comatom.xml" rel="self"/>
  <link href="http://layouts.studiomohawk.com"/>
- <updated>2011-01-15T01:36:38+09:00</updated>
+ <updated>2011-01-15T02:32:02+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
+ 
+ <entry>
+   <title>003_the_leftcol</title>
+   <link href="http://layouts.studiomohawk.com/2011/01/15/003_the_leftcol/"/>
+   <updated>2011-01-15T00:00:00+09:00</updated>
+   <id>http://layouts.studiomohawk.com/2011/01/15/003_the_leftcol</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/2011/01/15/003_the_leftcol/top.png&quot; alt=&quot;Top page&quot; class=&quot;left&quot; /&gt;
+&lt;img src=&quot;/2011/01/15/003_the_leftcol/post.png&quot; alt=&quot;Post page&quot; class=&quot;right&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;About the_leftcol&lt;/h2&gt;
+
+&lt;p&gt;I’ve stumbled upon many websites adopt left column lately.
+I&amp;rsquo;ve picked up some of traits on those new left column design web site.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Strong branding - Logo comes first strongly which lead to stronger branding.&lt;/li&gt;
+  &lt;li&gt;Near empty - Left column used has navigation in it, but now it only contains little. as little as just a logo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt; powered websites are personal website and have simple structure.
+This is why I decided to build this theme.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_leftcol&quot; class=&quot;btn download&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Note&lt;/h3&gt;
+&lt;p&gt;This theme is using HTML5 and CSS3.
+I really don&amp;rsquo;t care about IE at all. Not even IE9.(May work just fine)
+You can ask me questions but don&amp;rsquo;t expect me to make this compatible with IE.&lt;/p&gt;
+
+&lt;h2&gt;Change log&lt;/h2&gt;
+&lt;p&gt;Refer this at github.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>002_jekyll_newbie_guide</title>
