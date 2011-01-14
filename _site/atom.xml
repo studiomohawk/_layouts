@@ -4,7 +4,7 @@
  <title>_layouts | themes for jekyll</title>
  <link href="http://layouts.studiomohawk.comatom.xml" rel="self"/>
  <link href="http://layouts.studiomohawk.com"/>
- <updated>2011-01-15T00:58:52+09:00</updated>
+ <updated>2011-01-15T01:36:38+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
  
@@ -55,7 +55,7 @@ When you press your hotkey, Terminal wrapped with Visor drops down. It looks coo
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/indirect/jekyll-postfiles&quot;&gt;indirect&amp;rsquo;s jekyll_postfiles&lt;/a&gt;&lt;/p&gt;
 
-    &lt;p&gt;A plugin adds files for each post. You can add files on post basic. You need to create a directory named after the post in _postfiles, then you can refer to the file using /2011/01/09/002_jekyll_newbie_guide/YOURFILENAME.EXTENSION .
+    &lt;p&gt;A plugin adds files for each post. You can add files on post basic. You need to create a directory named after the post in _postfiles, then you can refer to the file using /2011/01/09/002_jekyll_newbie_guide/YOURFILENAME.EXTENSION.
 I need this to show screen shots of my theme.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -84,11 +84,11 @@ I need this to show screen shots of my theme.&lt;/p&gt;
  
  <entry>
    <title>001_the_minimum</title>
-   <link href="http://layouts.studiomohawk.com/2011/01/08/001-the-minimum/"/>
+   <link href="http://layouts.studiomohawk.com/2011/01/08/001_the_minimum/"/>
    <updated>2011-01-08T00:00:00+09:00</updated>
-   <id>http://layouts.studiomohawk.com/2011/01/08/001-the-minimum</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/img/top.png&quot; alt=&quot;Top page&quot; class=&quot;left&quot; /&gt;
-&lt;img src=&quot;/img/post.png&quot; alt=&quot;Post page&quot; class=&quot;right&quot; /&gt;&lt;/p&gt;
+   <id>http://layouts.studiomohawk.com/2011/01/08/001_the_minimum</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/2011/01/08/001_the_minimum/top.png&quot; alt=&quot;Top page&quot; class=&quot;left&quot; /&gt;
+&lt;img src=&quot;/2011/01/08/001_the_minimum/post.png&quot; alt=&quot;Post page&quot; class=&quot;right&quot; /&gt;&lt;/p&gt;
 
 &lt;h2&gt;About the_minimum&lt;/h2&gt;
 
@@ -100,19 +100,14 @@ This theme(or any other jekyll theme I design) is using HTML5 and CSS3.&lt;/p&gt
 &lt;h3&gt;Note&lt;/h3&gt;
 &lt;p&gt;I really don&amp;rsquo;t care about IE at all. Not even IE9.(May work just fine)
 You can ask me questions but don&amp;rsquo;t expect me to make this compatible with IE.&lt;/p&gt;
-
-&lt;h3&gt;changelog&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;2011_01_08 - Initial release. &lt;/li&gt;
-&lt;/ul&gt;
 </content>
  </entry>
  
  <entry>
    <title>000_layouts_open_for_public</title>
-   <link href="http://layouts.studiomohawk.com/2011/01/08/000-layouts-open/"/>
+   <link href="http://layouts.studiomohawk.com/2011/01/08/000_layouts_open/"/>
    <updated>2011-01-08T00:00:00+09:00</updated>
-   <id>http://layouts.studiomohawk.com/2011/01/08/000-layouts-open</id>
+   <id>http://layouts.studiomohawk.com/2011/01/08/000_layouts_open</id>
    <content type="html">&lt;h2&gt;What is _layouts?&lt;/h2&gt;
 &lt;p&gt;_layouts provides themes for &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;, which is, according to its author, a simple, blog aware, static site generator.&lt;/p&gt;
 
