@@ -4,9 +4,38 @@
  <title>_layouts | themes for jekyll</title>
  <link href="http://layouts.studiomohawk.comatom.xml" rel="self"/>
  <link href="http://layouts.studiomohawk.com"/>
- <updated>2011-01-15T02:32:02+09:00</updated>
+ <updated>2011-01-22T00:05:36+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
+ 
+ <entry>
+   <title>004_the_radar</title>
+   <link href="http://layouts.studiomohawk.com/2011/01/21/004_the_radar/"/>
+   <updated>2011-01-21T00:00:00+09:00</updated>
+   <id>http://layouts.studiomohawk.com/2011/01/21/004_the_radar</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/2011/01/21/004_the_radar/top.png&quot; alt=&quot;Top page&quot; class=&quot;left&quot; /&gt;
+&lt;img src=&quot;/2011/01/21/004_the_radar/backnumber.png&quot; alt=&quot;Post page&quot; class=&quot;right&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;About the_radar&lt;/h2&gt;
+
+&lt;p&gt;the_radar is very comprehensive theme. It is made for my personal blog called CSS Radar which will be migrated from WordPress soon.&lt;/p&gt;
+
+&lt;p&gt;Unlike other themes I published, it has 4 files in _layouts directory and to make theme management easier _includes directory has 7 files.
+If you would like to use this theme, please make sure what every file responsible.
+I&amp;rsquo;ve tried to make this minimum as possible, it might looks complex but once you understand file structure, you are good to go.&lt;/p&gt;
+
+&lt;p&gt;This theme(or any other jekyll theme I design) is using HTML5 and CSS3.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_radar&quot; class=&quot;btn download&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Note&lt;/h3&gt;
+&lt;p&gt;I really don&amp;rsquo;t care about IE at all. Not even IE9.(May work just fine)
+You can ask me questions but don&amp;rsquo;t expect me to make this compatible with IE.&lt;/p&gt;
+
+&lt;h3&gt;changelog&lt;/h3&gt;
+&lt;p&gt;Refer this at my github.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>003_the_leftcol</title>
