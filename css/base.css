@@ -83,7 +83,7 @@ a:hover {
 			
 /* P UL OL DL IMG
 -------------------------------------------------------- */
-p, ul, ol, dl, img {
+p, ul, ol, dl, img, .highlight {
 	font-size:1.0625em;
 	line-height: 1.4118;
 	margin: 0 0 1.4118em 0;

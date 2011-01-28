@@ -16,9 +16,16 @@
 	<link rel="stylesheet" href="/css/base.css">
 	<link rel="stylesheet" href="/css/mod.css">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/syntaxhighlighter.css">
 	<script src="/js/modernizr.js"></script>
-	<title>{% if page.style != 'home' %} {{ page.title }} | {% endif %}{{ site.sitename }} | {{ site.tagline }}</title>
-	<meta name="description" content="">
+	{% case page.style %}
+	{% when 'home' %}
+		<title>{{ site.sitename }} | {{ site.tagline }}</title>
+		<meta name="description" content="_layouts is a theme gallary for Jekyll powered websites. Themes are created by me, Yuya Saito who is an web designer/frontend developer in Tokyo, Japan.">
+	{% else %}
+		<title>{{ page.title }} | {{ site.sitename }} | {{ site.tagline }}</title>
+		<meta name="description" content="{{ content | strip_html | truncatewords: 25 }}">
+	{% endcase %}
 </head>
 <body class="{{ page.style }}">
 	<div id="page">
