@@ -25,5 +25,3 @@ I plan to publish my themes on github so you can use Issue page on github to sug
 I have repository for this blog at [github](https://github.com/studiomohawk/_layouts). you can fork me.
 
 You can follow me [@cssrader](http://twitter.com/#!/cssradar)
-
-If you like what I'm doing you could give me an invite for <del>[Forrest](http://forrst.com)</del>(I've got it. Thanks!) or [Dribbble](http://dribbble.com).

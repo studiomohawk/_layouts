@@ -1,18 +1,44 @@
 ---
-layout: default
+layout: home
 title: _layouts
-style: home
+desctiption: _layouts is a theme gallary for Jekyll powered websites. Themes are created by me, Yuya Saito who is an web designer/frontend developer in Tokyo, Japan.
 ---
-<nav>
+<div class="media minimum">
+	<a href="https://github.com/studiomohawk/jekyll-theme-the_minimum" class="left"><img src="/img/minimum.png" alt="the_minimum"></a>
+	<div class="bd">
+		<h2>the_minimum</h2>
+		<h3>Readability is not requared.</h3>
+		<ul>
+		    <li>Focus on text. Maximum reading experience.</li>
+		    <li>Adapt responsive web design. So that you don't have to worry about smartphones</li>
+		    <li>Made with HTML5 and CSS3 (Not for fancy shiny things you can do with them)</li>
+		    <li>Using LESS. Easier CSS editing.</li>
+		    <li>Two different layouts. One for top page and the other for articles.</li>
+		    <li>File structure is kept minimum so it'd be easy to custamize theme.</li>
+		</ul>
+		<div class="action">
+			<ul>
+				<li class="demo"><a href="#" class="btn">Live Demo</a></li>
+				<li class="download"><a href="https://github.com/studiomohawk/jekyll-theme-the_minimum" class="btn">Download</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- media -->
+<nav class="blog">
+<h3>Tips on Jekyll</h3>
 <ul class="posts">
-	{% for post in site.posts %}
-	<li>
+	{% for post in site.posts limit:10 %}
+	<li class="article-link">
 	<a href="{{ post.url }}" class="h3">{{ post.title }}</a>
 	<small>
-		<span class="tag">post as {{ post.style }}:</span>
 		<date>{{ post.date | date_to_string }}</date>
 	</small>
 	</li>
+	{% if forloop.length == 10 %}
+		{% if forloop.last == true %}
+			<li class="backnumber"><a href="/backnumber/" class="btn" title="backnumber">Backnumber</a></li>
+		{% endif %}
+	{% endif %}
 	{% endfor %}
 </ul>
 </nav>

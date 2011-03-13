@@ -1,0 +1,39 @@
+{% include system_head.html %}
+<body class="{{ page.layout }}">
+	<div id="page">
+		{% include header.html %}
+		<div id="main" role="main">
+			<div class="main_inner">
+				<header class="hd_article">
+					<h1>{{ page.title }}</h1>
+						<div class="meta">
+							<date title="{{ page.date | date_to_xmlschema }}">
+								<span class="published">Published: </span>
+								<span class="day">{{ page.date | date: '%d' }}</span>
+								<span class="month"><abbr>{{ page.date | date: '%b' }}</abbr></span>
+								<span class="year">{{ page.date | date: '%Y' }}</span>
+							</date>
+						</div>
+				</header>
+				<article class="the_article">
+				<div class="article_inner">
+					<div class="content">{{ content }}</div>
+				</div>
+				</article>
+			</div>
+		</div><!-- id="main" -->
+		<nav class="pagenation">
+		<ul>
+		{% if page.previous %}
+			<li class="before left"><a rel="prev" href="{{ page.previous.url }}" class="btn" title="View {{ page.previous.title }}">Before</a></li>
+		{% endif %}
+		{% if page.next %}
+			<li class="next right"><a rel="next" href="{{ page.next.url }}" class="btn" title="View {{ page.next.title }}">Next</a></li>
+		{% endif %}
+		</ul>
+		</nav>
+		{% include footer.html %}
+	</div><!-- id="page" -->
+	{% include system_foot.html %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+---
+layout: home
+title: Backnumber
+description: This is backnumber.
+---
+<h1>Backnumber</h1>
+<nav>
+<ul class="posts">
+	{% for post in site.posts offset:10 %}
+	<li>
+	<a href="{{ post.url }}" class="h3">{{ post.title }}</a>
+	<small>
+		<date>{{ post.date | date_to_string }}</date>
+	</small>
+	</li>
+	{% endfor %}
+</ul>
+</nav>

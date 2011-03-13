@@ -2,73 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>_layouts | themes for jekyll</title>
- <link href="http://layouts.studiomohawk.comatom.xml" rel="self"/>
+ <link href="http://layouts.studiomohawk.com/atom.xml" rel="self"/>
  <link href="http://layouts.studiomohawk.com"/>
- <updated>2011-01-29T00:16:45+09:00</updated>
+ <updated>2011-03-06T01:47:47+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
- 
- <entry>
-   <title>004_the_radar</title>
-   <link href="http://layouts.studiomohawk.com/2011/01/21/004_the_radar/"/>
-   <updated>2011-01-21T00:00:00+09:00</updated>
-   <id>http://layouts.studiomohawk.com/2011/01/21/004_the_radar</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/2011/01/21/004_the_radar/top.png&quot; alt=&quot;Top page&quot; class=&quot;left&quot; /&gt;
-&lt;img src=&quot;/2011/01/21/004_the_radar/backnumber.png&quot; alt=&quot;Post page&quot; class=&quot;right&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;About the_radar&lt;/h2&gt;
-
-&lt;p&gt;the_radar is very comprehensive theme. It is made for my personal blog called CSS Radar which will be migrated from WordPress soon.&lt;/p&gt;
-
-&lt;p&gt;Unlike other themes I published, it has 4 files in _layouts directory and to make theme management easier _includes directory has 7 files.
-If you would like to use this theme, please make sure what every file responsible.
-I&amp;rsquo;ve tried to make this minimum as possible, it might looks complex but once you understand file structure, you are good to go.&lt;/p&gt;
-
-&lt;p&gt;This theme(or any other jekyll theme I design) is using HTML5 and CSS3.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_radar&quot; class=&quot;btn download&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3&gt;Note&lt;/h3&gt;
-&lt;p&gt;I really don&amp;rsquo;t care about IE at all. Not even IE9.(May work just fine)
-You can ask me questions but don&amp;rsquo;t expect me to make this compatible with IE.&lt;/p&gt;
-
-&lt;h3&gt;changelog&lt;/h3&gt;
-&lt;p&gt;Refer this at my github.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>003_the_leftcol</title>
-   <link href="http://layouts.studiomohawk.com/2011/01/15/003_the_leftcol/"/>
-   <updated>2011-01-15T00:00:00+09:00</updated>
-   <id>http://layouts.studiomohawk.com/2011/01/15/003_the_leftcol</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/2011/01/15/003_the_leftcol/top.png&quot; alt=&quot;Top page&quot; class=&quot;left&quot; /&gt;
-&lt;img src=&quot;/2011/01/15/003_the_leftcol/post.png&quot; alt=&quot;Post page&quot; class=&quot;right&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;About the_leftcol&lt;/h2&gt;
-
-&lt;p&gt;I’ve stumbled upon many websites adopt left column lately.
-I&amp;rsquo;ve picked up some of traits on those new left column design web site.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Strong branding - Logo comes first strongly which lead to stronger branding.&lt;/li&gt;
-  &lt;li&gt;Near empty - Left column used has navigation in it, but now it only contains little. as little as just a logo.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Most &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt; powered websites are personal website and have simple structure.
-This is why I decided to build this theme.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_leftcol&quot; class=&quot;btn download&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3&gt;Note&lt;/h3&gt;
-&lt;p&gt;This theme is using HTML5 and CSS3.
-I really don&amp;rsquo;t care about IE at all. Not even IE9.(May work just fine)
-You can ask me questions but don&amp;rsquo;t expect me to make this compatible with IE.&lt;/p&gt;
-
-&lt;h2&gt;Change log&lt;/h2&gt;
-&lt;p&gt;Refer this at github.&lt;/p&gt;
-</content>
- </entry>
  
  <entry>
    <title>002_jekyll_newbie_guide</title>
@@ -141,74 +79,6 @@ I need this to show screen shots of my theme.&lt;/p&gt;
     &lt;p&gt;Extend pagination generator. Not sure how this differs from native pagination since I have no idea how to use native pagination.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>001_the_minimum</title>
-   <link href="http://layouts.studiomohawk.com/2011/01/08/001_the_minimum/"/>
-   <updated>2011-01-08T00:00:00+09:00</updated>
-   <id>http://layouts.studiomohawk.com/2011/01/08/001_the_minimum</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;/2011/01/08/001_the_minimum/top.png&quot; alt=&quot;Top page&quot; class=&quot;left&quot; /&gt;
-&lt;img src=&quot;/2011/01/08/001_the_minimum/post.png&quot; alt=&quot;Post page&quot; class=&quot;right&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;About the_minimum&lt;/h2&gt;
-
-&lt;p&gt;the_minimum is my first attempt for theming jekyll and this theme is used for &lt;a href=&quot;http://layouts.studiomohawk.com&quot;&gt;_layout - themes for jekyll&lt;/a&gt;.
-This theme(or any other jekyll theme I design) is using HTML5 and CSS3.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/studiomohawk/jekyll-theme-the_minimum&quot; class=&quot;btn download&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3&gt;Note&lt;/h3&gt;
-&lt;p&gt;I really don&amp;rsquo;t care about IE at all. Not even IE9.(May work just fine)
-You can ask me questions but don&amp;rsquo;t expect me to make this compatible with IE.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>000_layouts_open_for_public</title>
-   <link href="http://layouts.studiomohawk.com/2011/01/08/000_layouts_open/"/>
-   <updated>2011-01-08T00:00:00+09:00</updated>
-   <id>http://layouts.studiomohawk.com/2011/01/08/000_layouts_open</id>
-   <content type="html">&lt;h2&gt;What is _layouts?&lt;/h2&gt;
-&lt;p&gt;_layouts provides themes for &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;, which is, according to its author, a simple, blog aware, static site generator.&lt;/p&gt;
-
-&lt;p&gt;Jekyll is simple but powerful, I can do most of tasks I have to do to manage blog.
-I&amp;rsquo;ve been using WordPress, in fact I still use it, but I can see myself in future, I use Jekyll as my primal blog tool.
-I can use my trusted MacVim to write a post. I still couldn&amp;rsquo;t figure it out, but I could use git to &lt;em&gt;publish&lt;/em&gt; a post(Can anybody help me on this? Both Official document and Google failed).&lt;/p&gt;
-
-&lt;p&gt;_layouts is created for those who like to try Jekyll. I&amp;rsquo;m new to ruby so I can&amp;rsquo;t help you with that, but I&amp;rsquo;m an web designer/front end developer so I provide &lt;em&gt;themes&lt;/em&gt; to help you.
-Theme is like a WordPress theme. You can use it to change your design. While Jekyll have not yet provide WordPress like theming, it&amp;rsquo;s fairly easy to accomplish the same thing.
-Just clone my theme from github, start up terminal application, go cloned dir and type jekyll &amp;ndash;server. You can now preview your new design at http://localhost:4000/
-As I learn, I&amp;rsquo;ll share my findings on Jekyll at _layouts. If you have any tips, I&amp;rsquo;d be very happy to hear it.&lt;/p&gt;
-
-&lt;h2&gt;My design principle&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Minimalist&lt;/p&gt;
-
-    &lt;p&gt;I love minimalist approach. This allows me to focus on details. I&amp;rsquo;ll always keep design, file structure and code simple as possible.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;I hate IE&lt;/p&gt;
-
-    &lt;p&gt;I&amp;rsquo;m sorry to say, but please let me ignore IE for my personal project. I&amp;rsquo;ve had it enough on my day job already.
-Besides, if I care about IE, code will be messy which conflict with my first principle.
-And I don&amp;rsquo;t have Windows PC so that makes it pretty hard for me to check if my design/code is compatible.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;About me&lt;/h2&gt;
-&lt;p&gt;My name is Yuya Saito, I use studiomohawk as my alias on internet. As I&amp;rsquo;ve wrote above, I am an web designer/front end developer. I currently live in Tokyo, Japan working for internet based media company in Japan.
-I love what I do. I&amp;rsquo;d love to become better an web designer. That is why I&amp;rsquo;ve started this project. I know how to become better in any field. Just do it. Do it a lot.&lt;/p&gt;
-
-&lt;p&gt;You may already noticed, English is not my first language so bare with me. I&amp;rsquo;ve graduated from University of Nevada, Las Vegas and I majored in print journalism so I try to re-learn how to write in English soon enough.&lt;/p&gt;
-
-&lt;h2&gt;Suggestion?&lt;/h2&gt;
-&lt;p&gt;I plan to publish my themes on github so you can use Issue page on github to suggest me.
-I have repository for this blog at &lt;a href=&quot;https://github.com/studiomohawk/_layouts&quot;&gt;github&lt;/a&gt;. you can fork me.&lt;/p&gt;
-
-&lt;p&gt;You can follow me &lt;a href=&quot;http://twitter.com/#!/cssradar&quot;&gt;@cssrader&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

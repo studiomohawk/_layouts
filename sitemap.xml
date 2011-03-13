@@ -1,12 +1,15 @@
+---
+layout: nil
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
 		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
 		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+{% for post in site.posts %}
 <url>
-  <loc>http://layouts.studiomohawk.com/2011/01/09/002_jekyll_newbie_guide/</loc>
-  <lastmod>2011-01-09T00:00:00+09:00</lastmod>
+  <loc>{{ site.url }}{{ post.url }}</loc>
+  <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
 </url>
-
+{% endfor %}
