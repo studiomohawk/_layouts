@@ -48,6 +48,7 @@ body.post .content img.huge {
 	}
 	body.post .content h1, body.post .content h2, body.post .content h3, body.post .content h4, body.post .content h5, body.post .content h6 { margin-left: 252px; }
 	body.post .content p, body.post .content ul, body.post .content ol, body.post .content dl, body.post .content blockquote { margin-left: 252px; }
+	body.post .content li p, body.post .content dt p, body.post .content dl p, .content body.post dd p { margin-left: 0; }
 	body.post .content img.huge {
 		left: -252px;
 		max-width: 1048px;

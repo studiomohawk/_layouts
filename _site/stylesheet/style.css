@@ -31,6 +31,15 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #070810), color-stop(100%, #343738));
   text-decoration: none;
 }
+@font-face {
+  font-family: 'junctionregularRegular';
+  src: url('font/Junction-webfont.eot');
+  src: url('font/Junction-webfont.eot?iefix') format('eot'), url('font/Junction-webfont.woff') format('woff'), url('font/Junction-webfont.ttf') format('truetype'), url('font/Junction-webfont.svg#webfontY2elItE2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, .logo, .tagline { font-family: junctionregularRegular, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif; }
+.posts li a { font-family: junctionregularRegular, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif; }
 a:link {
   color: #1a1a1a;
   text-decoration: none;
@@ -58,17 +67,52 @@ a:hover {
   color: #555555;
   border-bottom: 0;
 }
+.tooltip { position: relative; }
+.tooltip:hover:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 3px 7px;
+  color: #ffffff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align: center;
+  width: 126px;
+}
+.tooltip:hover:before {
+  content: ".";
+  line-height: 0;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+}
 #head { margin-bottom: 24px; }
 #head ul li {
   display: inline-block;
   font-weight: bold;
   text-shadow: 0px 1px 0px #ffffff;
 }
-.logo { font-size: 4.5em; }
+.logo {
+  font-size: 4.5em;
+  letter-spacing: -4px;
+}
 .logo a:link { border-bottom: 0 none; }
 .logo a:visited { border-bottom: 0 none; }
 .logo a:hover { border-bottom: 0 none; }
-.tagline { margin-left: 5px; }
+.tagline {
+  letter-spacing: -1px;
+  margin-left: 5px;
+}
 .hd_article .btn { margin-top: 3px; }
 .the_article { background: #fafafa; }
 .the_article .article_inner {
@@ -87,7 +131,16 @@ body.home .the_article .control li {
 }
 body.home .the_article .media .left { margin-right: 40px; }
 body.home .the_article .media .right { margin-left: 40px; }
-body.home .the_article .media a img { border: 1px solid #ffffff; }
+body.home .the_article .media a img {
+  margin: 0 30px 30px 0;
+  padding: 0;
+  border: 1px solid #efefef;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
 body.home .the_article .media .action li {
   display: inline-block;
   *display: inline;
@@ -95,6 +148,7 @@ body.home .the_article .media .action li {
   zoom: 1;
   vertical-align: top;
 }
+body.home .the_article .content .bd ul { list-style: square; }
 body.home .the_article .posts li {
   margin-bottom: 24px;
   padding-bottom: 6px;

@@ -18,7 +18,7 @@ And of course, this site is powered by [jekyll](https://github.com/mojombo/jekyl
 My name is Yuya Saito, I use studiomohawk as my alias on internet. As I've wrote above, I am an web designer/front end developer. I currently live in Tokyo, Japan working for internet based media company in Japan.
 I love what I do. I'd love to become better an web designer. That is why I've started this project. I know how to become better in any field. Just do it. Do it a lot.
 
-You may already noticed, English is not my first language so bare with me. I've graduated from University of Nevada, Las Vegas and I majored in print journalism so I try to re-learn how to write in English soon enough.
+You may already noticed, English is not my first language so bare with me. I've graduated from University of Nevada, Las Vegas and I majored in print journalism so I try to re-learn how to write in English soon.
 
 ##Suggestion?
 I plan to publish my themes on github so you can use Issue page on github to suggest me.

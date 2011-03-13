@@ -1,8 +1,7 @@
 ---
-layout: default
-title: "002_jekyll_newbie_guide"
+layout: post
+title: "jekyll_newbie_guide"
 published: true
-style: text
 ---
 
 ##A Newbie(like me) Guide for Jekyll
@@ -17,8 +16,6 @@ style: text
   You need to be familiar with Terminal in order to use [Jekyll](https://github.com/mojombo/jekyll). I'm a GUI guy as much as you are so Visor make my life a little easier. Visor is a system-wide terminal on a hot key.
   When you press your hotkey, Terminal wrapped with Visor drops down. It looks cool enough to use it more often so you can learn commands(well, you'll only need cd to move around directory and jekyll to build sites).
   
-  *Could someone please teach me how to end jekyll --server --auto? Do I have to quit terminal for it?*
-
 #Websites Get You Started on Jekyll
 * [Official Wiki](https://github.com/mojombo/jekyll/wiki)
 * [Site Point's Jekyll: Sites Made Simple](http://articles.sitepoint.com/article/jekyll-sites-made-simple) - Little bit old but useful guide.
