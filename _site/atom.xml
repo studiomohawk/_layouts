@@ -2,17 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>_layouts | themes for jekyll</title>
- <link href="http://layouts.studiomohawk.com/atom.xml" rel="self"/>
- <link href="http://layouts.studiomohawk.com"/>
- <updated>2011-03-14T23:10:26+09:00</updated>
+ <link href="http://www.layouts-the.me/atom.xml" rel="self"/>
+ <link href="http://www.layouts-the.me"/>
+ <updated>2011-03-14T23:18:29+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
  
  <entry>
    <title>jekyll_newbie_guide</title>
-   <link href="http://layouts.studiomohawk.com/2011/01/09/jekyll_newbie_guide/"/>
+   <link href="http://www.layouts-the.me/2011/01/09/jekyll_newbie_guide/"/>
    <updated>2011-01-09T00:00:00+09:00</updated>
-   <id>http://layouts.studiomohawk.com/2011/01/09/jekyll_newbie_guide</id>
+   <id>http://www.layouts-the.me/2011/01/09/jekyll_newbie_guide</id>
    <content type="html">&lt;h2 id='a_newbielike_me_guide_for_jekyll'&gt;A Newbie(like me) Guide for Jekyll&lt;/h2&gt;
 
 &lt;h3 id='toolsfor_mac'&gt;Tools(for Mac)&lt;/h3&gt;
