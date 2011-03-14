@@ -28,6 +28,11 @@ body.post .content img.huge {
 	max-width: 628px;
 }
 
+
+.body.home .the_article .media a img {
+	max-width: 100%; 
+}
+
 #foot .hasGrid div { width: 648px; }
 
 /*	13-column layout
@@ -78,6 +83,7 @@ body.post .content img.huge {
 		width: 396px;
 	}
 	body.post .content img.huge { max-width: 376px; }
+	.action .demo { margin-bottom: 7px; }
 	#foot .hasGrid div { width: 396px; }
 }
 
