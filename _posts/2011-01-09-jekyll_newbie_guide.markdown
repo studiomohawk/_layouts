@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "jekyll_newbie_guide"
+title: "Jekyll Newbie Guide"
 published: true
 ---
 

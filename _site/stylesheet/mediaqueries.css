@@ -1,39 +1,8 @@
 /*	Less Framework 3
 	by Joni Korpi
-	http://lessframework.com	*/
-
-/*	Default 8-column layout
-	60 px columns, 24 px gutters, 60 px margins, 768 px total
-	---------------------------------------------------------
-	1     2      3      4      5      6      7      8     
-	60px  144px  228px  312px  396px  480px  564px  648px	*/
-
-body {
-	padding: 42px 0 0;
-	-webkit-tap-highlight-color: rgb(255,255,0);
-}
-img { max-width: 100%; }
-.head_inner,
-.hd_article,
-.article_inner,
-.pagenation ul,
-.foot_inner {
-	padding: 0 60px 0;
-	width: 648px;
-}
-body.post .content h1, body.post .content h2, body.post .content h3, body.post .content h4, body.post .content h5, body.post .content h6 { margin-left: 0; }
-body.post .content p, body.post .content ul, body.post .content ol, body.post .content dl, body.post .content blockquote { margin-left: 0; }
-body.post .content img.huge {
-	left: 0;
-	max-width: 628px;
-}
-
-
-.body.home .the_article .media a img {
-	max-width: 100%; 
-}
-
-#foot .hasGrid div { width: 648px; }
+	http://lessframework.com
+	Modified by Yuya Saito
+*/
 
 /*	13-column layout
 	60 px columns, 24 px gutters, 72 px margins, 1212 px total (extra space for scrollbars)
@@ -41,24 +10,61 @@ body.post .content img.huge {
 	1     2      3      4      5      6      7      8      9      10     11     12     13
 	60px  144px  228px  312px  396px  480px  564px  648px  732px  816px  900px  984px  1068px	*/
 
-@media only screen and (min-width: 1212px) {
-	body { padding: 48px 0 0; }
-	.head_inner,
-	.hd_article,
-	.article_inner,
-	.pagenation ul,
-	.foot_inner { 
-		padding: 0 72px 0;
-		width: 1068px;
-	}
-	body.post .content h1, body.post .content h2, body.post .content h3, body.post .content h4, body.post .content h5, body.post .content h6 { margin-left: 252px; }
-	body.post .content p, body.post .content ul, body.post .content ol, body.post .content dl, body.post .content blockquote { margin-left: 252px; }
-	body.post .content li p, body.post .content dt p, body.post .content dl p, .content body.post dd p { margin-left: 0; }
-	body.post .content img.huge {
-		left: -252px;
-		max-width: 1048px;
-	}
-	#foot .hasGrid div { width: 480px; }
+body { padding: 48px 0 0; }
+img { max-width: 100%; }
+.head_inner,
+.hd_article,
+.article_inner,
+.pagenation ul,
+.foot_inner {
+	margin: 0 auto;
+	padding: 0 72px 0;
+	width: 1068px;
+}
+body.post .content h1, body.post .content h2, body.post .content h3, body.post .content h4, body.post .content h5, body.post .content h6 { margin-left: 252px; }
+body.post .content p, body.post .content ul, body.post .content ol, body.post .content dl, body.post .content blockquote { margin-left: 252px; }
+body.post .content li p, body.post .content dt p, body.post .content dl p, .content body.post dd p { margin-left: 0; }
+body.post .content img.huge {
+	left: -252px;
+	max-width: 1048px;
+}
+#foot .hasGrid div { width: 480px; }
+
+/*	8-column layout
+	60 px columns, 24 px gutters, 60 px margins, 768 px total
+	---------------------------------------------------------
+	1     2      3      4      5      6      7      8     
+	60px  144px  228px  312px  396px  480px  564px  648px	*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+body {
+	padding: 42px 0 0;
+	-webkit-tap-highlight-color: rgb(255,255,0);
+}
+.head_inner,
+.hd_article,
+.article_inner,
+.pagenation ul,
+.foot_inner {
+	margin: 0 auto;
+	padding: 0 60px 0;
+	width: 648px;
+}
+
+body.home .content .left,
+body.home .content .right {
+	float: none;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+body.post .content h1, body.post .content h2, body.post .content h3, body.post .content h4, body.post .content h5, body.post .content h6 { margin-left: 0; }
+body.post .content p, body.post .content ul, body.post .content ol, body.post .content dl, body.post .content blockquote { margin-left: 0; }
+body.post .content img.huge {
+	left: 0;
+	max-width: 628px;
+}
+
+#foot .hasGrid div { width: 648px; }
 }
 
 /*	5-column layout
@@ -79,11 +85,20 @@ body.post .content img.huge {
 	.article_inner,
 	.pagenation ul,
 	.foot_inner {
+		margin: 0 auto;
 		padding: 0 42px 0;
 		width: 396px;
 	}
+
+	body.home .content .left,
+	body.home .content .right {
+		float: none;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	body.post .content h1, body.post .content h2, body.post .content h3, body.post .content h4, body.post .content h5, body.post .content h6 { margin-left: 0; }
+	body.post .content p, body.post .content ul, body.post .content ol, body.post .content dl, body.post .content blockquote { margin-left: 0; }
 	body.post .content img.huge { max-width: 376px; }
-	.action .demo { margin-bottom: 7px; }
 	#foot .hasGrid div { width: 396px; }
 }
 
@@ -100,7 +115,7 @@ body.post .content img.huge {
 		-webkit-text-size-adjust: 100%;
 	}
 
-	.logo { font-size: 2.3em; }
+	.logo { font-size: 3.3em; }
 	.head_inner,
 	.hd_article,
 	.article_inner,
@@ -109,6 +124,22 @@ body.post .content img.huge {
 		padding: 0 46px 0;
 		width: 228px;
 	}
+	.btn { width: 228px; }
+	
+	h1, .h1 { font-size: 1.75em; }
+	h2, .h2 { font-size: 1.5em; }
+	h3, .h3 { font-size: 1.25em; }
+
+	body.home .content .left,
+	body.home .content .right {
+		float: none;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	body.home .content .action .demo { margin-bottom: 1.25em; }
+
+	body.post .content h1, body.post .content h2, body.post .content h3, body.post .content h4, body.post .content h5, body.post .content h6 { margin-left: 0; }
+	body.post .content p, body.post .content ul, body.post .content ol, body.post .content dl, body.post .content blockquote { margin-left: 0; }
 	body.post .content img.huge { max-width: 208px; }
 	.the_article .posts li small { display: none; }
 	#foot .hasGrid div { width: 228px; }
