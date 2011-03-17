@@ -4,15 +4,67 @@
  <title>_layouts | themes for jekyll</title>
  <link href="http://www.layouts-the.me/atom.xml" rel="self"/>
  <link href="http://www.layouts-the.me"/>
- <updated>2011-03-15T22:24:32+09:00</updated>
+ <updated>2011-03-17T23:29:41+09:00</updated>
  <id>http://layouts.studiomohawk.com/</id>
 
  
  <entry>
+   <title>Host a Static Website on Amazon S3</title>
+   <link href="http://www.layouts-the.me/2011/03/16/hosting-on-amazon-s3/"/>
+   <updated>2011-03-16T00:00:00+09:00</updated>
+   <id>http://www.layouts-the.me/2011/03/16/hosting-on-amazon-s3</id>
+   <content type="html">&lt;p&gt;You may already noticed that Amazon S3 is able to host static websites now.&lt;br /&gt;If you are like me, you always wonder what the fuss about all the cloud talking among developers.&lt;br /&gt;And I&amp;#8217;m not that kinda guy who can let it go or pretend it&amp;#8217;s nothing.&lt;br /&gt;So here I am, I&amp;#8217;m having the cloud experience right now.&lt;/p&gt;
+
+&lt;h2 id='_layouts_is_now_hosted_on_amazon_s3'&gt;_layouts is now hosted on Amazon S3.&lt;/h2&gt;
+
+&lt;p&gt;Does my website need a could server?&lt;br /&gt;I&amp;#8217;m pretty sure it doesn&amp;#8217;t, but I&amp;#8217;ve learned few things and it was fun doing it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ll share my little experiment with whoever read this blog.&lt;br /&gt;I don&amp;#8217;t think no one does, so it&amp;#8217;ll be like my memo.&lt;/p&gt;
+
+&lt;h2 id='motivation_behind_it'&gt;Motivation behind it&lt;/h2&gt;
+
+&lt;p&gt;I did want to know what it&amp;#8217;s all about to have my site on cloud.&lt;br /&gt;I stumbled upon press release of Amazon saying S3 is now capable to host static websites.&lt;br /&gt;And I do have static website created by &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then I found an article by digital inspiration, &lt;a href='http://www.labnol.org/internet/web-hosting-with-amazon-s3/18742/'&gt;How to Host Your Website on Amazon S3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='lets_get_to_the_tutorial_part'&gt;Let&amp;#8217;s get to the tutorial part&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#8217;ve follow the tutorial except when he uses Amazon S3 Console.&lt;br /&gt;Since I am using Jekyll, I&amp;#8217;ve learned to use rsync to upload my update to the server.&lt;/p&gt;
+
+&lt;p&gt;Though I&amp;#8217;ve never tried, I assume I cannot use ssh and rsync to Amazon S3. So I went out to search alternatives.&lt;br /&gt;What I&amp;#8217;ve found was &lt;a href='http://www.s3sync.net/wiki'&gt;S3sync&lt;/a&gt;.&lt;br /&gt;It&amp;#8217;s easy to install on my Mac.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='sh'&gt;gem install s3sync
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;It&amp;#8217;s written in ruby and packaged using gem (though it&amp;#8217;s not the latest one).&lt;br /&gt;It&amp;#8217;s not a equivalent of rsync but pretty much the same.&lt;br /&gt;I still need to read the document but it is fairly easy to use if you already familiar with rsync.&lt;/p&gt;
+
+&lt;p&gt;I did used Amazon S3 Console to create a bucket (which is like a directory for Amazon Web Service, I guess), to make contents of bucket public and to make a bucket treated as website.&lt;br /&gt;All of those is one time task so I don&amp;#8217;t need to do that again for while.&lt;br /&gt;(S3Sync has a sibling command called s3cmd which arrows you to create a bucket)&lt;/p&gt;
+
+&lt;h2 id='there_are_few_things_you_need_to_be_aware_of'&gt;There are few things you need to be aware of&lt;/h2&gt;
+
+&lt;p&gt;If you need to have your domain points to Amazon S3 (I assume that&amp;#8217;s mostly everybody), you need to name your bucket &lt;strong&gt;www.YOUR-DOMAIN-NAME.WHATEVER&lt;/strong&gt; like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;www&lt;/strong&gt; is crucial since you need change something called CNAME setting on your domain provider(Mine is GoDaddy).&lt;br /&gt;I still don&amp;#8217;t quite understand what CNAME is after reading Wikipedia entry, but I&amp;#8217;m guessing that you only can point subdomain (and I&amp;#8217;m guessing www IS a subdomain) with CNAME.&lt;/p&gt;
+
+&lt;p&gt;Well, I&amp;#8217;ve tried without &lt;strong&gt;www&lt;/strong&gt; but no luck so if you know better than I am please help me on this.&lt;/p&gt;
+
+&lt;p&gt;And since Amason S3 is not an Apache server, you can&amp;#8217;t use .htaccess to do all the tricks.&lt;/p&gt;
+
+&lt;p&gt;I need help on this one too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Are there anyway I can do .htaccess tricks on Amazon S3?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;#8217;s it!&lt;br /&gt;Isn&amp;#8217;t it easy and fun?&lt;/p&gt;
+
+&lt;p&gt;I do still have a few minor things to iron out, but I can live with it, at least for a while.&lt;/p&gt;
+
+&lt;p&gt;If you are a server ninja who can help me, please give me your shout at &lt;a href='http://twitter.com/#!/cssradar'&gt;Twitter@cssradar&lt;/a&gt;. If you are like me and having problems on hosting static website on Amason S3, I&amp;#8217;d love to help you.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Jekyll Newbie Guide</title>
-   <link href="http://www.layouts-the.me/2011/01/09/jekyll_newbie_guide/"/>
+   <link href="http://www.layouts-the.me/2011/01/09/jekyll-newbie-guide/"/>
    <updated>2011-01-09T00:00:00+09:00</updated>
-   <id>http://www.layouts-the.me/2011/01/09/jekyll_newbie_guide</id>
+   <id>http://www.layouts-the.me/2011/01/09/jekyll-newbie-guide</id>
    <content type="html">&lt;h2 id='a_newbielike_me_guide_for_jekyll'&gt;A Newbie(like me) Guide for Jekyll&lt;/h2&gt;
 
 &lt;h3 id='toolsfor_mac'&gt;Tools(for Mac)&lt;/h3&gt;
@@ -61,7 +113,7 @@
 &lt;li&gt;
 &lt;p&gt;&lt;a href='https://github.com/indirect/jekyll-postfiles'&gt;indirect&amp;#8217;s jekyll_postfiles&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;A plugin adds files for each post. You can add files on post basic. You need to create a directory named after the post in _postfiles, then you can refer to the file using /2011/01/09/jekyll_newbie_guide/YOURFILENAME.EXTENSION . I need this to show screen shots of my theme.&lt;/p&gt;
+&lt;p&gt;A plugin adds files for each post. You can add files on post basic. You need to create a directory named after the post in _postfiles, then you can refer to the file using /2011/01/09/jekyll-newbie-guide/YOURFILENAME.EXTENSION . I need this to show screen shots of my theme.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 

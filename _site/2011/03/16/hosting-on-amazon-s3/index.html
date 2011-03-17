@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="VCjPu4enLtZl8QXpuPVxY6vMufxe68UrchkhHkzz1zA">
+	<link href="http://feeds.feedburner.com/_layouts" rel="alternate" title="_layouts | themes for jekyll" type="application/atom+xml">
+	<link rel="stylesheet" media="all" href="/stylesheet/master.min.css">
+	<link rel="stylesheet" media="all" href="/stylesheet/mediaqueries.css">
+	<script src="/script/modernizr.js"></script>
+	
+		<title>Host a Static Website on Amazon S3 | _layouts | themes for jekyll</title>
+		<meta name="description" content="You may already noticed that Amazon S3 is able to host static websites now.If you are like me, you always wonder what the fuss about...">
+	
+</head>
+
+<body class="post">
+	<div id="page">
+				<header id="head">
+		<div class="head_inner">
+			<ul>
+				<li class="logo"><a href="/">_layouts</a></li>
+				<li class="tagline">themes for jekyll</li>
+			</ul>
+		</div>
+		</header><!-- id="head" -->
+
+		<div id="main" role="main">
+			<div class="main_inner">
+				<header class="hd_article">
+					<h1>Host a Static Website on Amazon S3</h1>
+						<div class="meta">
+							<date title="2011-03-16T00:00:00+09:00">
+								<span class="published">Published: </span>
+								<span class="day">16</span>
+								<span class="month"><abbr>Mar</abbr></span>
+								<span class="year">2011</span>
+							</date>
+						</div>
+				</header>
+				<article class="the_article">
+				<div class="article_inner">
+					<div class="content"><p>You may already noticed that Amazon S3 is able to host static websites now.<br />If you are like me, you always wonder what the fuss about all the cloud talking among developers.<br />And I&#8217;m not that kinda guy who can let it go or pretend it&#8217;s nothing.<br />So here I am, I&#8217;m having the cloud experience right now.</p>
+
+<h2 id='_layouts_is_now_hosted_on_amazon_s3'>_layouts is now hosted on Amazon S3.</h2>
+
+<p>Does my website need a could server?<br />I&#8217;m pretty sure it doesn&#8217;t, but I&#8217;ve learned few things and it was fun doing it.</p>
+
+<p>I&#8217;ll share my little experiment with whoever read this blog.<br />I don&#8217;t think no one does, so it&#8217;ll be like my memo.</p>
+
+<h2 id='motivation_behind_it'>Motivation behind it</h2>
+
+<p>I did want to know what it&#8217;s all about to have my site on cloud.<br />I stumbled upon press release of Amazon saying S3 is now capable to host static websites.<br />And I do have static website created by <a href='https://github.com/mojombo/jekyll'>Jekyll</a>.</p>
+
+<p>Then I found an article by digital inspiration, <a href='http://www.labnol.org/internet/web-hosting-with-amazon-s3/18742/'>How to Host Your Website on Amazon S3</a>.</p>
+
+<h2 id='lets_get_to_the_tutorial_part'>Let&#8217;s get to the tutorial part</h2>
+
+<p>I&#8217;ve follow the tutorial except when he uses Amazon S3 Console.<br />Since I am using Jekyll, I&#8217;ve learned to use rsync to upload my update to the server.</p>
+
+<p>Though I&#8217;ve never tried, I assume I cannot use ssh and rsync to Amazon S3. So I went out to search alternatives.<br />What I&#8217;ve found was <a href='http://www.s3sync.net/wiki'>S3sync</a>.<br />It&#8217;s easy to install on my Mac.</p>
+<div class='highlight'><pre><code class='sh'>gem install s3sync
+</code></pre>
+</div>
+<p>It&#8217;s written in ruby and packaged using gem (though it&#8217;s not the latest one).<br />It&#8217;s not a equivalent of rsync but pretty much the same.<br />I still need to read the document but it is fairly easy to use if you already familiar with rsync.</p>
+
+<p>I did used Amazon S3 Console to create a bucket (which is like a directory for Amazon Web Service, I guess), to make contents of bucket public and to make a bucket treated as website.<br />All of those is one time task so I don&#8217;t need to do that again for while.<br />(S3Sync has a sibling command called s3cmd which arrows you to create a bucket)</p>
+
+<h2 id='there_are_few_things_you_need_to_be_aware_of'>There are few things you need to be aware of</h2>
+
+<p>If you need to have your domain points to Amazon S3 (I assume that&#8217;s mostly everybody), you need to name your bucket <strong>www.YOUR-DOMAIN-NAME.WHATEVER</strong> like this.</p>
+
+<p><strong>www</strong> is crucial since you need change something called CNAME setting on your domain provider(Mine is GoDaddy).<br />I still don&#8217;t quite understand what CNAME is after reading Wikipedia entry, but I&#8217;m guessing that you only can point subdomain (and I&#8217;m guessing www IS a subdomain) with CNAME.</p>
+
+<p>Well, I&#8217;ve tried without <strong>www</strong> but no luck so if you know better than I am please help me on this.</p>
+
+<p>And since Amason S3 is not an Apache server, you can&#8217;t use .htaccess to do all the tricks.</p>
+
+<p>I need help on this one too.</p>
+
+<p><strong>Are there anyway I can do .htaccess tricks on Amazon S3?</strong></p>
+
+<p>That&#8217;s it!<br />Isn&#8217;t it easy and fun?</p>
+
+<p>I do still have a few minor things to iron out, but I can live with it, at least for a while.</p>
+
+<p>If you are a server ninja who can help me, please give me your shout at <a href='http://twitter.com/#!/cssradar'>Twitter@cssradar</a>. If you are like me and having problems on hosting static website on Amason S3, I&#8217;d love to help you.</p></div>
+				</div>
+				</article>
+			</div>
+		</div><!-- id="main" -->
+		
+		<nav class="pagenation">
+			<ul>
+			
+				<li class="before left"><a rel="prev" href="/2011/01/09/jekyll-newbie-guide/" class="btn" title="View Jekyll Newbie Guide">Before</a></li>
+			
+			
+			</ul>
+		</nav>
+		
+		<footer id="foot">
+<div class="foot_inner">
+	<div class="hasGrid">
+		<div class="left alpha grid-6"><h4>about</h4>
+<p>
+_layouts is a theme gallery for Jekyll powered websites. Themes are created by me, Yuya Saito who is an web designer/front-end developer in Tokyo, Japan.<br>
+Unless otherwise noted, themes here are all MIT licenced which means you can do whatever you want as long as you don't sue me. <br>
+You can read more detail on my github repository.<br>
+And of course, this site is powered by <a href="https://github.com/mojombo/jekyll">jekyll</a>.<br>
+The font I'm using is <a href="http://www.theleagueofmoveabletype.com/fonts/1-junction">Junction</a> via @font-face by <a href="http://www.theleagueofmoveabletype.com/">The League of Moveable Type</a>
+</p>
+</div>
+		<div class="right omega grid-6"><h4>if you like what i've done</h4>
+<ul>
+	<li>Follow me at <a href="http://forrst.com/people/studiomohawk" rel="me">Forrest</a></li>
+	<li>Or <a href="http://twitter.com/#!/cssradar" rel="me">Twitter</a></li>
+</ul>
+<h4>contact</h4>
+<ul>
+	<li><a href="http://twitter.com/#!/cssradar" rel="me">cssradar@twitter</a></li>
+	<li><a href="https://github.com/studiomohawk/_layouts/issues" rel="me">Report issue@github</a></li>
+	<li><a href="https://github.com/studiomohawk/_layouts/" rel="me">And yes, you can fork it</a></li>
+</ul>
+</div>
+	</div>
+</footer><!-- id="foot" -->
+
+	</div><!-- id="page" -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"></script>
+<!-- You may want to stats with your blog if not you should erase this file and remove inculude link from 
+You don't need to edit this file, you can set your ID at _config.yml -->
+<script>
+	var _gaq = [['_setAccount', 'UA-61203-14'], ['_trackPageview']];
+	(function(d, t) {
+		var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+	})(document, 'script');
+</script>
+
+
+</body>
+</html>

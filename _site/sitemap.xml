@@ -6,7 +6,12 @@
 		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://www.layouts-the.me/2011/01/09/jekyll_newbie_guide/</loc>
+  <loc>http://www.layouts-the.me/2011/03/16/hosting-on-amazon-s3/</loc>
+  <lastmod>2011-03-16T00:00:00+09:00</lastmod>
+</url>
+
+<url>
+  <loc>http://www.layouts-the.me/2011/01/09/jekyll-newbie-guide/</loc>
   <lastmod>2011-01-09T00:00:00+09:00</lastmod>
 </url>
 
